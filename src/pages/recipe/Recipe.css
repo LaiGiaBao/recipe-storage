@@ -1,0 +1,37 @@
+.recipe {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.recipe__list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-top: 0;
+}
+.recipe__item {
+  margin-right: 10px;
+  color: #777;
+}
+.recipe__item::after {
+  content: ",";
+}
+
+.recipe__item:last-child::after {
+  content: ".";
+}
+.method {
+  text-align: left;
+  line-height: 1.5;
+}
+/* dark mode */
+.recipe.dark {
+  background: #555;
+  color: #e4e4e4;
+}
+.recipe.dark .page__title {
+  color: #e4e4e4;
+}
